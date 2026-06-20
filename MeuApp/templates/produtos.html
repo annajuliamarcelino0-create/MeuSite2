@@ -1,18 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="pt-BR">
+ 
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Produtos</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" />
+   
 </head>
 <body>
-    <h1>conheça nossos produtos:</h1>
-    <ul>
-        {% for item in produtos %}
-                   <li>{{ item }}</li>
-        {% endfor %}
-         <ul>
-        
-
+    <div class="container">
+        <h1>Produtos</h1>
+        <h2>Confira nossos produtos!</h2>
+        <ul>
+            {% for produto in produtos %}
+                <li>{{ produto.nome }} - R$ {{ produto.preco }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+     <script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>
+ 
+ 

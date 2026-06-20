@@ -1,0 +1,83 @@
+/* Configurações Globais / Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal (Card) */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Títulos */
+h1 {
+    color: #092e20;
+    /* Verde característico do Django */
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #555;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #092e20;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Menu / Lista */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #092e20;
+    background-color: #e2ece9;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efeito Hover (passar o mouse) nos botões */
+li a:hover {
+    background-color: #092e20;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(9, 46, 32, 0.2);
+}
